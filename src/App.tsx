@@ -2,8 +2,11 @@ import { useEffect, useState } from 'react';
 import { Scroll, Sword, Shield, Coins, Users, Twitter } from 'lucide-react';
 import fantomeBaton from './assets/characters/fantome_baton.png';
 import villageoisBaton from './assets/characters/villageois_baton.png';
+import villageoisUndead from './assets/characters/villageois_baton_undead.png';
 import guerrierBaton from './assets/characters/guerrier_baton.png';
+import guerrierIron from './assets/characters/guerrier.png';
 import voleurBaton from './assets/characters/voleur_baton.png';
+import voleurUndead from './assets/characters/voleur_baton_undead.png';
 import magicien from './assets/characters/magicien.png';
 
 function App() {
@@ -102,13 +105,26 @@ function App() {
 
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="flex items-center gap-8 p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
+              <img src={villageoisUndead} alt="Ghost" className="w-24 h-24 pixelated flex-shrink-0" style={{ imageRendering: 'pixelated' }} />
+              <img src={voleurUndead} alt="Ghost" className="w-24 h-24 pixelated flex-shrink-0" style={{ imageRendering: 'pixelated' }} />
+              <div>
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#888888' }}>
+                  Level -1: Undead
+                </h3>
+                <p className="text-lg text-gray-400">
+                  💀 Undead — Restless souls with uncertain motives. Their actions confuse the oracles of ElizaOS.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-8 p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
               <img src={fantomeBaton} alt="Ghost" className="w-24 h-24 pixelated flex-shrink-0" style={{ imageRendering: 'pixelated' }} />
               <div>
                 <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#888888' }}>
-                  Level -1 / 0: Ghost
+                  Level 0: Ghost
                 </h3>
                 <p className="text-lg text-gray-400">
-                  Every soul starts as a wandering Ghost. New users and those without trust begin here, ethereal and unseen.
+                  👻 Young spirits, not yet anchored in time. Their identities are less than a year old.
                 </p>
               </div>
             </div>
@@ -123,7 +139,7 @@ function App() {
                   Level 1: Trusted Hero
                 </h3>
                 <p className="text-lg text-gray-400">
-                  Build trust through consistent activity. Become a Villager, Warrior, Magician, or Thief. Each path leads to legend in the Web3 realm.
+                  🧙 Fully incarnated beings whose presence and history inspire trust in the eyes of ElizaOS.
                 </p>
               </div>
             </div>
@@ -167,7 +183,7 @@ function App() {
               <p className="text-gray-300">
                 Prove your dedication. Veterans earn iron weapons and enhanced status in the realm.
               </p>
-              <img src={guerrierBaton} alt="Iron weapon" className="w-20 h-20 mx-auto mt-6 pixelated" style={{ imageRendering: 'pixelated' }} />
+              <img src={guerrierIron} alt="Iron weapon" className="w-20 h-20 mx-auto mt-6 pixelated" style={{ imageRendering: 'pixelated' }} />
             </div>
           </div>
 
