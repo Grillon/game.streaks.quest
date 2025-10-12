@@ -98,7 +98,7 @@ function App() {
     </p>
 
     <button
-      onClick={() => scrollToSection("how-it-works")}
+      onClick={() => scrollToSection("about")}
       className="bg-transparent border-2 hover:bg-cyan-500/20 text-white px-8 py-4 text-xl rounded transition-all transform hover:scale-105"
       style={{
         fontFamily: "monospace",
@@ -119,6 +119,7 @@ function App() {
 
 
       <section
+        id="about"
         className="py-24 bg-black relative border-t border-b"
         style={{ borderColor: "#222222" }}
       >
