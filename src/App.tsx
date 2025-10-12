@@ -321,7 +321,7 @@ function App() {
       <section className="py-24 bg-black">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ fontFamily: 'monospace', color: '#00ffff', textShadow: '0 0 10px #00ffff' }}>
-            Prove Your Consistency
+            Build the web3 web of trust
           </h2>
           <p className="text-2xl mb-12" style={{ fontFamily: 'monospace', color: '#ff00ff' }}>
             Join Streaks.quest
@@ -371,7 +371,7 @@ function App() {
           </div>
 
           <p className="text-center" style={{ fontFamily: 'monospace', color: '#444444' }}>
-            Streaks.quest - The Game of Trust
+            Streaks.quest - The web3 web of trust through a game.
           </p>
         </div>
       </footer>
