@@ -70,10 +70,11 @@ function App() {
             Streaks.quest
           </h1>
           <p className="text-3xl md:text-4xl mb-4" style={{ fontFamily: 'monospace', color: '#ff00ff' }}>
-            The Game of Trust
+            A ritual, a game, a proof of engagement
           </p>
           <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-2xl mx-auto" style={{ fontFamily: 'monospace' }}>
-            Earn your place in the Web3 world. From Ghost to Hero.
+            Streaks.quest transforms your gm/gn into proof of engagement
+            and gives you a soulbound reputation NFT.
           </p>
 
           <button
@@ -102,6 +103,10 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'monospace', color: '#00ffff', textShadow: '0 0 10px #00ffff' }}>
             How It Works
           </h2>
+          <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-2xl mx-auto" style={{ fontFamily: 'monospace' }}>
+            First you get your evolutive soulbound NFT which depends on your reputation.
+          </p>
+            
 
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="flex items-center gap-8 p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
@@ -156,6 +161,9 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'monospace', color: '#00ffff', textShadow: '0 0 10px #00ffff' }}>
             Streak Levels
           </h2>
+          <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-2xl mx-auto" style={{ fontFamily: 'monospace' }}>
+            Then you can streak naturally your gm/gn on social network.
+          </p>
 
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="p-8 rounded border-2" style={{ borderColor: '#ff00ff', backgroundColor: '#0a0a0a', boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)' }}>
