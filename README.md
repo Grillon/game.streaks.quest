@@ -1,3 +1,4 @@
+[![Deploy to GitHub Pages](https://github.com/Grillon/game.streaks.quest/actions/workflows/deploy.yml/badge.svg)](https://github.com/Grillon/game.streaks.quest/actions/workflows/deploy.yml)
 ## ⚔️ **Système de niveaux Streaks.quest (v0.2)**
 
 ### 🧩 **1️⃣ Fiabilité (Classe du personnage)**
