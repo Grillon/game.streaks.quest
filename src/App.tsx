@@ -109,41 +109,43 @@ function App() {
             
 
           <div className="max-w-4xl mx-auto space-y-12">
-            <div className="flex items-center gap-8 p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
-              <img src={villageoisUndead} alt="Ghost" className="w-24 h-24 pixelated flex-shrink-0" style={{ imageRendering: 'pixelated' }} />
-              <img src={voleurUndead} alt="Ghost" className="w-24 h-24 pixelated flex-shrink-0" style={{ imageRendering: 'pixelated' }} />
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 p-6 sm:p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
+              <div className="flex gap-4 flex-shrink-0">
+                <img src={villageoisUndead} alt="Ghost" className="w-16 h-16 sm:w-24 sm:h-24 pixelated" style={{ imageRendering: 'pixelated' }} />
+                <img src={voleurUndead} alt="Ghost" className="w-16 h-16 sm:w-24 sm:h-24 pixelated" style={{ imageRendering: 'pixelated' }} />
+              </div>
               <div>
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#888888' }}>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#888888' }}>
                   Level -1: Undead
                 </h3>
-                <p className="text-lg text-gray-400">
+                <p className="text-base sm:text-lg text-gray-400">
                   💀 Undead — Restless souls with uncertain motives. Their actions confuse the oracles of ElizaOS.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-8 p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
-              <img src={fantomeBaton} alt="Ghost" className="w-24 h-24 pixelated flex-shrink-0" style={{ imageRendering: 'pixelated' }} />
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 p-6 sm:p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
+              <img src={fantomeBaton} alt="Ghost" className="w-16 h-16 sm:w-24 sm:h-24 pixelated flex-shrink-0" style={{ imageRendering: 'pixelated' }} />
               <div>
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#888888' }}>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#888888' }}>
                   Level 0: Ghost
                 </h3>
-                <p className="text-lg text-gray-400">
+                <p className="text-base sm:text-lg text-gray-400">
                   👻 Young spirits, not yet anchored in time. Their identities are less than a year old.
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-8 p-8 rounded border-2" style={{ borderColor: '#00ffff', backgroundColor: '#0a0a0a', boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)' }}>
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 p-6 sm:p-8 rounded border-2" style={{ borderColor: '#00ffff', backgroundColor: '#0a0a0a', boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)' }}>
               <div className="flex gap-4 flex-shrink-0">
-                <img src={villageoisBaton} alt="Villager" className="w-20 h-20 pixelated" style={{ imageRendering: 'pixelated' }} />
-                <img src={guerrierBaton} alt="Warrior" className="w-20 h-20 pixelated" style={{ imageRendering: 'pixelated' }} />
+                <img src={villageoisBaton} alt="Villager" className="w-16 h-16 sm:w-20 sm:h-20 pixelated" style={{ imageRendering: 'pixelated' }} />
+                <img src={guerrierBaton} alt="Warrior" className="w-16 h-16 sm:w-20 sm:h-20 pixelated" style={{ imageRendering: 'pixelated' }} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#00ffff' }}>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2" style={{ fontFamily: 'monospace', color: '#00ffff' }}>
                   Level 1: Trusted Hero
                 </h3>
-                <p className="text-lg text-gray-400">
+                <p className="text-base sm:text-lg text-gray-400">
                   🧙 Fully incarnated beings whose presence and history inspire trust in the eyes of ElizaOS.
                 </p>
               </div>
