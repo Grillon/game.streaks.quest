@@ -255,32 +255,65 @@ function App() {
         </div>
       </section>
 
-      <section className="py-24 bg-black relative">
+      <section className="py-24 bg-black relative border-t border-b" style={{ borderColor: '#222222' }}>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'monospace', color: '#666666' }}>
-            The Shadow Realm
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8" style={{ fontFamily: 'monospace', color: '#00ffff', textShadow: '0 0 10px #00ffff' }}>
+            Privacy & Trust
           </h2>
+          <p className="text-center text-xl mb-16" style={{ fontFamily: 'monospace', color: '#ff00ff' }}>
+            Your reputation, your data, your control
+          </p>
 
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-12">
-              <img
-                src={fantomeBaton}
-                alt="Ghost"
-                className="w-40 h-40 mx-auto mb-8 pixelated opacity-70 animate-pulse"
-                style={{
-                  imageRendering: 'pixelated',
-                  filter: 'drop-shadow(0 0 20px rgba(148, 163, 184, 0.5))'
-                }}
-              />
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'monospace', color: '#00ffff' }}>
+                MVP: Simple & Fair
+              </h3>
+              <p className="text-lg text-gray-300 mb-4">
+                For the initial version, your reputation is based on <span style={{ color: '#ff00ff' }}>account age</span> and <span style={{ color: '#ff00ff' }}>referrals</span>.
+                Simple, transparent, and fair.
+              </p>
             </div>
 
-            <p className="text-xl mb-8 leading-relaxed" style={{ fontFamily: 'monospace', color: '#666666' }}>
-              Every soul starts as a Ghost. Some wander as Undead... until they find their way back to life.
-            </p>
+            <div className="p-8 rounded border-2" style={{ borderColor: '#00ffff', backgroundColor: '#0a0a0a', boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)' }}>
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'monospace', color: '#00ffff' }}>
+                Future: ElizaOS Evaluation
+              </h3>
+              <p className="text-lg text-gray-300 mb-4">
+                In the future, <span style={{ color: '#00ffff' }}>ElizaOS</span> will evaluate your reputation through advanced on-chain analysis.
+                Smarter, decentralized, and more comprehensive.
+              </p>
+            </div>
 
-            <p className="text-lg italic" style={{ color: '#888888' }}>
-              Break the cycle. Build your streak. Transcend the shadow realm and join the living legends.
-            </p>
+            <div className="p-8 rounded border-2" style={{ borderColor: '#ff00ff', backgroundColor: '#0a0a0a', boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)' }}>
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'monospace', color: '#ff00ff' }}>
+                Zero-Knowledge Privacy
+              </h3>
+              <div className="space-y-3 text-gray-300">
+                <p className="text-lg">
+                  <span style={{ color: '#ff00ff' }}>✓</span> No private database - your data stays yours
+                </p>
+                <p className="text-lg">
+                  <span style={{ color: '#ff00ff' }}>✓</span> Only evaluation results are encrypted and stored on-chain
+                </p>
+                <p className="text-lg">
+                  <span style={{ color: '#ff00ff' }}>✓</span> Only you can read your full reputation data
+                </p>
+                <p className="text-lg">
+                  <span style={{ color: '#ff00ff' }}>✓</span> Share proofs via re-encryption when you choose
+                </p>
+              </div>
+            </div>
+
+            <div className="p-8 rounded border-2" style={{ borderColor: '#333333', backgroundColor: '#0a0a0a' }}>
+              <h3 className="text-2xl font-bold mb-4 text-center" style={{ fontFamily: 'monospace', color: '#00ffff' }}>
+                Frictionless & Non-Intrusive
+              </h3>
+              <p className="text-lg text-gray-300 text-center">
+                No KYC. No invasive data collection. Just <span style={{ color: '#00ffff' }}>natural social activity</span> and <span style={{ color: '#ff00ff' }}>your consent</span>.
+                <br />You remain the master of your data.
+              </p>
+            </div>
           </div>
         </div>
       </section>
