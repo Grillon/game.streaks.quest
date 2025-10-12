@@ -25,71 +25,195 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <section
-        id="hero"
-        className="min-h-screen flex items-center justify-center relative bg-black"
+  id="hero"
+  className="min-h-screen flex items-center justify-center relative bg-black"
+>
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300ffff' fill-opacity='0.03'%3E%3Crect x='0' y='0' width='8' height='8'/%3E%3Crect x='16' y='0' width='8' height='8'/%3E%3Crect x='32' y='0' width='8' height='8'/%3E%3Crect x='8' y='8' width='8' height='8'/%3E%3Crect x='24' y='8' width='8' height='8'/%3E%3C/g%3E%3C/svg%3E")`,
+    }}
+  ></div>
+
+  <div className="container mx-auto px-4 py-16 text-center relative z-10">
+    <div className="mb-12 flex justify-center gap-8 items-end">
+      <img
+        src={villageoisBaton}
+        alt="Villager"
+        className="w-24 h-24 md:w-32 md:h-32 pixelated animate-bounce"
+        style={{
+          animationDelay: "0s",
+          animationDuration: "2s",
+          imageRendering: "pixelated",
+        }}
+      />
+      <img
+        src={guerrierBaton}
+        alt="Warrior"
+        className="w-32 h-32 md:w-40 md:h-40 pixelated animate-bounce"
+        style={{
+          animationDelay: "0.3s",
+          animationDuration: "2s",
+          imageRendering: "pixelated",
+        }}
+      />
+      <img
+        src={magicien}
+        alt="Magician"
+        className="w-24 h-24 md:w-32 md:h-32 pixelated animate-bounce"
+        style={{
+          animationDelay: "0.6s",
+          animationDuration: "2s",
+          imageRendering: "pixelated",
+        }}
+      />
+    </div>
+
+    <h1
+      className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
+      style={{
+        fontFamily: "monospace",
+        textShadow: "0 0 20px #00ffff, 0 0 40px #00ffff",
+        color: "#00ffff",
+      }}
+    >
+      Streaks.quest
+    </h1>
+
+    <p
+      className="text-3xl md:text-4xl mb-4"
+      style={{ fontFamily: "monospace", color: "#ff00ff" }}
+    >
+      Turn your gm into proof of trust
+    </p>
+
+    <p
+      className="text-xl md:text-2xl mb-12 text-gray-400 max-w-2xl mx-auto"
+      style={{ fontFamily: "monospace" }}
+    >
+      A social ritual on{" "}
+      <span style={{ color: "#00ffff" }}>Solana</span> where each streak
+      strengthens your soulbound{" "}
+      <span style={{ color: "#ff00ff" }}>reputation NFT</span>.
+    </p>
+
+    <button
+      onClick={() => scrollToSection("how-it-works")}
+      className="bg-transparent border-2 hover:bg-cyan-500/20 text-white px-8 py-4 text-xl rounded transition-all transform hover:scale-105"
+      style={{
+        fontFamily: "monospace",
+        borderColor: "#00ffff",
+        boxShadow: "0 0 10px #00ffff",
+        color: "#00ffff",
+      }}
+    >
+      Join the Quest
+    </button>
+  </div>
+
+  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <Scroll className="w-8 h-8" style={{ color: "#00ffff" }} />
+  </div>
+</section>
+
+
+
+      <section
+        className="py-24 bg-black relative border-t border-b"
+        style={{ borderColor: "#222222" }}
       >
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300ffff' fill-opacity='0.03'%3E%3Crect x='0' y='0' width='8' height='8'/%3E%3Crect x='16' y='0' width='8' height='8'/%3E%3Crect x='32' y='0' width='8' height='8'/%3E%3Crect x='8' y='8' width='8' height='8'/%3E%3Crect x='24' y='8' width='8' height='8'/%3E%3C/g%3E%3C/svg%3E")`,
-        }}></div>
-
-        <div className="container mx-auto px-4 py-16 text-center relative z-10">
-          <div className="mb-12 flex justify-center gap-8 items-end">
-            <img
-              src={villageoisBaton}
-              alt="Villager"
-              className="w-24 h-24 md:w-32 md:h-32 pixelated animate-bounce"
-              style={{
-                animationDelay: '0s',
-                animationDuration: '2s',
-                imageRendering: 'pixelated'
-              }}
-            />
-            <img
-              src={guerrierBaton}
-              alt="Warrior"
-              className="w-32 h-32 md:w-40 md:h-40 pixelated animate-bounce"
-              style={{
-                animationDelay: '0.3s',
-                animationDuration: '2s',
-                imageRendering: 'pixelated'
-              }}
-            />
-            <img
-              src={magicien}
-              alt="Magician"
-              className="w-24 h-24 md:w-32 md:h-32 pixelated animate-bounce"
-              style={{
-                animationDelay: '0.6s',
-                animationDuration: '2s',
-                imageRendering: 'pixelated'
-              }}
-            />
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight" style={{ fontFamily: 'monospace', textShadow: '0 0 20px #00ffff, 0 0 40px #00ffff', color: '#00ffff' }}>
-            Streaks.quest
-          </h1>
-          <p className="text-3xl md:text-4xl mb-4" style={{ fontFamily: 'monospace', color: '#ff00ff' }}>
-            A ritual, a game, a proof of engagement
-          </p>
-          <p className="text-xl md:text-2xl mb-12 text-gray-400 max-w-2xl mx-auto" style={{ fontFamily: 'monospace' }}>
-            Streaks.quest transforms your gm/gn into proof of engagement
-            and gives you a soulbound reputation NFT.
-          </p>
-
-          <button
-            onClick={() => scrollToSection('how-it-works')}
-            className="bg-transparent border-2 hover:bg-cyan-500/20 text-white px-8 py-4 text-xl rounded transition-all transform hover:scale-105"
-            style={{ fontFamily: 'monospace', borderColor: '#00ffff', boxShadow: '0 0 10px #00ffff', color: '#00ffff' }}
+        <div className="container mx-auto px-4 relative z-10">
+          <h2
+            className="text-4xl md:text-5xl font-bold text-center mb-8"
+            style={{
+              fontFamily: "monospace",
+              color: "#00ffff",
+              textShadow: "0 0 10px #00ffff",
+            }}
           >
-            Join the Quest
-          </button>
-        </div>
+            What is Streaks.quest?
+          </h2>
+          <p
+            className="text-center text-xl mb-16"
+            style={{ fontFamily: "monospace", color: "#ff00ff" }}
+          >
+            A social game of trust, built on Solana
+          </p>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <Scroll className="w-8 h-8" style={{ color: '#00ffff' }} />
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div
+              className="p-8 rounded border-2"
+              style={{
+                borderColor: "#333333",
+                backgroundColor: "#0a0a0a",
+                boxShadow: "0 0 20px rgba(0, 255, 255, 0.1)",
+              }}
+            >
+              <h3
+                className="text-2xl font-bold mb-4"
+                style={{ fontFamily: "monospace", color: "#00ffff" }}
+              >
+                The Concept
+              </h3>
+              <p className="text-lg text-gray-300 mb-4">
+                Every <span style={{ color: "#ff00ff" }}>gm</span> strengthens a web
+                of trust. Your <span style={{ color: "#00ffff" }}>soulbound NFT</span>{" "}
+                evolves with your consistency and connections across X, Discord, and
+                Telegram.
+              </p>
+            </div>
+
+            <div
+              className="p-8 rounded border-2"
+              style={{
+                borderColor: "#00ffff",
+                backgroundColor: "#0a0a0a",
+                boxShadow: "0 0 20px rgba(0, 255, 255, 0.2)",
+              }}
+            >
+              <h3
+                className="text-2xl font-bold mb-4"
+                style={{ fontFamily: "monospace", color: "#00ffff" }}
+              >
+                The Mechanics
+              </h3>
+              <p className="text-lg text-gray-300 mb-4">
+                Reputation starts simple —{" "}
+                <span style={{ color: "#ff00ff" }}>account age</span> and{" "}
+                <span style={{ color: "#ff00ff" }}>referrals</span> define your early
+                levels. Later, <span style={{ color: "#00ffff" }}>ElizaOS</span> will
+                analyze your social behavior on-chain to refine your reliability
+                score.
+              </p>
+            </div>
+
+            <div
+              className="p-8 rounded border-2"
+              style={{
+                borderColor: "#ff00ff",
+                backgroundColor: "#0a0a0a",
+                boxShadow: "0 0 20px rgba(255, 0, 255, 0.2)",
+              }}
+            >
+              <h3
+                className="text-2xl font-bold mb-4 text-center"
+                style={{ fontFamily: "monospace", color: "#ff00ff" }}
+              >
+                The Purpose
+              </h3>
+              <p className="text-lg text-gray-300 text-center">
+                No KYC. No forms. No friction. Just{" "}
+                <span style={{ color: "#00ffff" }}>natural interactions</span> and{" "}
+                <span style={{ color: "#ff00ff" }}>authentic presence</span>.
+                <br />
+                Play. Connect. Build trust.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+
 
       <section
         id="how-it-works"
