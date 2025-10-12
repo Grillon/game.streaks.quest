@@ -1,0 +1,22 @@
+{
+  "name": "Villager of Streaks.quest",
+  "symbol": "STREAK",
+  "description": "A cheerful Web3 enthusiast, greeting every new day with a GM.",
+  "image": "https://game.streaks.quest/metadata/villageois_baton.png",
+  "external_url": "https://game.streaks.quest",
+  "attributes": [
+    { "trait_type": "Reputation Level", "value": "1" },
+    { "trait_type": "Activity", "value": "Web3 Enthusiast" },
+    { "trait_type": "Character", "value": "Villager" }
+  ],
+  "properties": {
+    "files": [
+      { "uri": "https://game.streaks.quest/metadata/villageois_baton.png", "type": "image/png" }
+    ],
+    "category": "image",
+    "creators": [
+      { "address": "2dHWeB7KvUFveqoYFpACBzWPPZEBeLZMRPF7AxxzQkBq", "share": 100 }
+    ]
+  }
+}
+

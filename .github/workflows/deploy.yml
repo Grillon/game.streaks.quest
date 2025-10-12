@@ -13,26 +13,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'  # Adapte à ta version
-        cache: 'npm'
-    - name: Install deps
-      run: npm ci
-    - name: Build
-      run: npm run build
-      env:
-        VITE_BASE: '/'  # Force ton base si besoin
+      - uses: actions/checkout@v4
 
-    - name: Create CNAME file
-      run: echo "game.streaks.quest" > ./dist/CNAME
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './dist'
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          VITE_BASE: '/'
+
+      # 👇 Nouvelle étape : copier les fichiers JSON dans /dist/metadata
+      - name: Copy metadata files
+        run: |
+          mkdir -p ./dist/metadata
+          cp -r ./src/assets/characters/*.json ./src/assets/characters/*.png ./dist/metadata/
+
+      - name: Create CNAME file
+        run: echo "game.streaks.quest" > ./dist/CNAME
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
 
   deploy:
     environment:
@@ -41,6 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

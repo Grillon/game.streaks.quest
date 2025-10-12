@@ -1,0 +1,22 @@
+{
+  "name": "Sorcerer of Streaks.quest",
+  "symbol": "STREAK",
+  "description": "Wise and patient, the Sorcerer weaves connections through finance and magic alike.",
+  "image": "https://game.streaks.quest/metadata/magicien.png",
+  "external_url": "https://game.streaks.quest",
+  "attributes": [
+    { "trait_type": "Reputation Level", "value": "1" },
+    { "trait_type": "Activity", "value": "Finance" },
+    { "trait_type": "Character", "value": "Sorcerer" }
+  ],
+  "properties": {
+    "files": [
+      { "uri": "https://game.streaks.quest/metadata/magicien.png", "type": "image/png" }
+    ],
+    "category": "image",
+    "creators": [
+      { "address": "2dHWeB7KvUFveqoYFpACBzWPPZEBeLZMRPF7AxxzQkBq", "share": 100 }
+    ]
+  }
+}
+

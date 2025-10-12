@@ -1,0 +1,21 @@
+{
+  "name": "Ghost of Streaks.quest",
+  "symbol": "STREAK",
+  "description": "A soul yet to prove itself. This Ghost awaits reputation to rise within Streaks.quest.",
+  "image": "https://game.streaks.quest/metadata/fantome_baton.png",
+  "external_url": "https://game.streaks.quest",
+  "attributes": [
+    { "trait_type": "Reputation Level", "value": "0" },
+    { "trait_type": "Character", "value": "Ghost" }
+  ],
+  "properties": {
+    "files": [
+      { "uri": "https://game.streaks.quest/metadata/fantome_baton.png", "type": "image/png" }
+    ],
+    "category": "image",
+    "creators": [
+      { "address": "2dHWeB7KvUFveqoYFpACBzWPPZEBeLZMRPF7AxxzQkBq", "share": 100 }
+    ]
+  }
+}
+

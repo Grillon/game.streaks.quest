@@ -1,0 +1,39 @@
+{
+  "name": "Streaks Quest Identity (Unrevealed)",
+  "symbol": "STREAK",
+  "description": "A soul entering the Streaks.quest world. The true form will be revealed once your reputation is verified on-chain.",
+  "image": "https://game.streaks.quest/metadata/fantome_baton.png",
+  "external_url": "https://game.streaks.quest",
+  "animation_url": null,
+  "attributes": [
+    { "trait_type": "Reputation Level", "value": "Unverified" },
+    { "trait_type": "Character", "value": "Unknown" },
+    { "trait_type": "Status", "value": "Waiting for verification" }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://game.streaks.quest/metadata/fantome_baton.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "2dHWeB7KvUFveqoYFpACBzWPPZEBeLZMRPF7AxxzQkBq",
+        "share": 100
+      }
+    ]
+  },
+  "extensions": {
+    "dynamic_traits_source": "https://game.streaks.quest/api/user_traits/{wallet}",
+    "possible_variants": {
+      "0": "https://game.streaks.quest/metadata/ghost.json",
+      "1-finance": "https://game.streaks.quest/metadata/sorcerer.json",
+      "1-builder": "https://game.streaks.quest/metadata/warrior.json",
+      "1-bizdev": "https://game.streaks.quest/metadata/robber.json",
+      "1-enthusiast": "https://game.streaks.quest/metadata/villager.json"
+    }
+  }
+}
+

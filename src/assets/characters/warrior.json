@@ -1,0 +1,22 @@
+{
+  "name": "Warrior of Streaks.quest",
+  "symbol": "STREAK",
+  "description": "A builder at heart, forging reputation through action and creation.",
+  "image": "https://game.streaks.quest/metadata/guerrier_baton.png",
+  "external_url": "https://game.streaks.quest",
+  "attributes": [
+    { "trait_type": "Reputation Level", "value": "1" },
+    { "trait_type": "Activity", "value": "Builder" },
+    { "trait_type": "Character", "value": "Warrior" }
+  ],
+  "properties": {
+    "files": [
+      { "uri": "https://game.streaks.quest/metadata/guerrier_baton.png", "type": "image/png" }
+    ],
+    "category": "image",
+    "creators": [
+      { "address": "2dHWeB7KvUFveqoYFpACBzWPPZEBeLZMRPF7AxxzQkBq", "share": 100 }
+    ]
+  }
+}
+
